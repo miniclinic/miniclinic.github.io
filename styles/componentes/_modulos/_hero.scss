@@ -1,0 +1,79 @@
+/**
+* Hero
+**/
+
+
+.hero {
+	background: $corDestaque;
+	padding-top: 10em;
+	padding-bottom: 10em;
+}
+
+#hero_home {
+	background: url('../../img/hero_home.png') no-repeat bottom right #54bed6;
+}
+
+.intro {
+	@include col(7/12, $offset:1/12);
+
+	p {
+		color: #fff;
+		font-size: 1.8em;
+		margin-bottom: 2em;
+	}
+}
+
+a.botao_video {
+	@include borderRadius(4px);
+	background: url('../../img/icone_play.png') no-repeat 24px center #fff;
+	color: $corPrincipal;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 18px 24px 18px 60px;
+	margin-top: 2em;
+}
+
+#hero_equipe {
+	background: $corDestaque;
+
+  .intro {
+    @include col(7/12, $offset:5/12);
+  }
+}
+
+#hero_miniclinic {
+	background: $corPrincipal;
+
+  .intro {
+    @include col(5/12, $offset:6/12);
+  }
+
+	ul li {
+		list-style: none;
+		display: block;
+		float: left;
+		margin: 0 15px 24px 0;
+		width: 130px;
+
+		a {
+			display: block;
+			margin-right: 1.5em;
+			display: block;
+		}
+	}
+
+	a.botao_branco {
+		font-size: 1.6em;
+		@include borderRadius(4px);
+		background: #fff;
+		color: $corPrincipal;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: $bold;
+		text-align: center;
+		width: 130px;
+		height: 37px;
+		line-height: 27px;
+		padding: 5px 0;
+	}
+}

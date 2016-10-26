@@ -1,0 +1,851 @@
+/**
+* Responsive Web Design
+**/
+
+.toggle-menu { display: none; }
+.overflow-menu { width: 0; height: 0; position: fixed; top: 0; left: 0; display: none; }
+.entrar_resp { display: none; }
+
+//Variáveis
+$xxp: 280px; 
+$xp:  450px; 
+$p:   550px;
+$m:   667px; 
+$g:   768px; 
+$xg:  1024px; 
+$xxg: 1160px;
+ 
+//Mixins
+@mixin rwd($canvas) {
+  @if $canvas == xxg {
+    @media only screen and (max-width: $xxg) { 
+    	@content; 
+    }
+  }
+
+  @else if $canvas == xg {
+    @media only screen and (max-width: $xg) { 
+    	@content; 
+    }
+  }
+
+  @else if $canvas == g {
+    @media only screen and (max-width: $g) { 
+    	@content; 
+    }
+  }
+
+  @else if $canvas == m {
+    @media only screen and (max-width: $m) { 
+    	@content; 
+    }
+  }
+
+  @else if $canvas == p {
+    @media only screen and (max-width: $p) { 
+    	@content; 
+    }
+  }
+
+  @else if $canvas == xp {
+    @media only screen and (max-width: $xp) { 
+    	@content; 
+    }
+  }
+
+  @else if $canvas == xxp {
+    @media only screen and (max-width: $xxp) { 
+    	@content; 
+    }
+  }
+
+}
+
+ 
+//Estilos
+//1160px
+@include rwd(xxg) {
+  .wrap {
+    padding: 0 2.5%;
+  }
+
+  .hero {
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  .figura_bloco {
+    @include col(4/12, $offset:0);
+  }
+
+  .texto_bloco {
+    @include col(8/12, $offset:0);
+  }
+
+  .mini_grid {
+    @include col(4/12);
+  }
+
+  .calltoaction {
+    .texto_bloco {
+      @include col(6/12, $offset:0);
+    }
+
+    .screenshot_app {
+      @include col(6/12);
+    }
+  }
+
+  #equipe {
+    @include col(12/12, $offset:0);
+  }
+
+  .logo_footer {
+    @include col(2/12, $offset:0);
+  }
+
+  #coluna-1 {
+    @include col(3/12);
+  }
+
+  #coluna-3 {
+    @include col(2/12);
+  }
+
+  #coluna-2 {
+    @include col(3/12);
+
+    li:last-child {
+      margin-left: 1.5em;
+    }
+  }
+
+  .app_download a {
+    @include col(2/12);
+  }
+
+  .coluna {
+    @include col(3/10);
+    
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+//1024px
+@include rwd(xg) {
+  .toggle-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 50px;
+    background: #fff url(../../img/icone-menu.png) no-repeat center center;
+    border-right: 1px solid #ccc;
+    text-indent: -9999999px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .overflow-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    z-index: 8;
+  }
+
+  .entrar_resp {
+    display: block;
+    @include borderRadius(2px);
+    background: $corPrincipal;
+    color: #fff;
+    line-height: 14px;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    &:hover {
+      background: $corDestaque;
+      color: #fff;
+    }
+  }
+
+  .menu-sup {
+    height: 58px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.36);
+    -moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 0.36);
+    box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 0.36);
+
+    #logo {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 65px;
+      width: 110px;
+      line-height: 58px;
+
+      img {
+        max-width: none;
+        width: 100%;
+      }
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: -220px;
+      margin: 0;
+      z-index: 10;
+      height: 100%;
+      width: 180px;
+      background: #fff;
+      -webkit-box-shadow: 4px 0px 5px 0px rgba(50, 50, 50, 0.38);
+      -moz-box-shadow:    4px 0px 5px 0px rgba(50, 50, 50, 0.38);
+      box-shadow:         4px 0px 5px 0px rgba(50, 50, 50, 0.38);
+      text-align: left;
+      
+      ul {
+        width: 100%;
+
+        li {
+          display: block;
+          float: none;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          border-top: 1px solid #ccc;
+
+          a {
+            display: block;
+            width: 100%;
+            line-height: 24px;
+            padding: 14px 1em;
+          }
+
+          a.destaque_menu {
+            display: block;
+            width: 160px;
+            text-align: center;
+            margin: 10px auto;
+          }
+
+          /*Link com Submenu*/
+          &.has-child {
+            position: relative;
+            overflow-x: hidden;
+            a {
+              &:after {
+                right: 10px;
+              }
+            }
+
+            /*Submenu*/
+            .sub-menu {
+              position: relative;
+              top: 0;
+              width: 100%;
+              display: block;
+              background: #fff;
+              padding-bottom: 18px;
+
+              /*Links do Submenu*/
+              li {
+                display: block;
+                float: none;
+                margin: 0;
+                padding: 0 .5em;
+                position: relative;
+                background: #fff;
+                border: none;
+
+                &:hover {
+                  background: #f4f4f4;
+                }
+
+                a {
+                  line-height: 5px;
+                  color: $corLinkSubMenu;
+
+                  &:hover {
+                    border-bottom: none;
+                    color: $corLinkSubMenuHover;
+                  }
+
+                  &:after {
+                    content: "";
+                  }
+                }
+
+                /*Submenu com terceiro nível de menu*/
+                &.has-child {
+                  a:after {
+                    content: $setaSubMenuLado;
+                    right: 5px;
+                  }
+
+                  /*li segundo nivel mostra menu no hover*/
+                  &:hover {
+                    .child-menu {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+
+            /*li primeiro nivel mostra menu no hover*/
+            &:hover {
+              .sub-menu {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    margin-top: 58px;
+
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  .barra_titulo,
+  .header_pagina {
+    margin-top: 58px;
+  }
+
+  .figura_bloco {
+    @include col(6/12, $offset:0);
+  }
+
+  .texto_bloco {
+    @include col(6/12, $offset:0);
+  }
+
+  .texto_mini_bloco {
+    h5 {
+      font-size: 1.6em;
+    }
+  }
+
+  .mini_grid {
+    @include col(5/12, $offset:1/12);
+  }
+
+  .calltoaction {
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .tabs {
+    @include col(12/12, $offset:0);
+    overflow: hidden;
+    margin-top: 6em;
+    margin-bottom: 6em;
+  }
+
+  .planos {
+    @include col(12/12, $offset:0);
+  }
+
+  #care {
+    .texto_bloco {
+      margin-top: 0;
+    }
+  }
+
+  .meio_bloco {
+    h2 {
+      margin-top: 0;
+    }
+
+    .texto_bloco {
+      @include col(6/12, $offset:0/12);
+    }
+
+    .figura_bloco {
+      @include col(6/12, $offset:0/12);
+    }
+  }
+
+  .logo_footer {
+    display: none;
+  }
+
+  #coluna-1 {
+    @include col(3/12);
+  }
+
+  #coluna-3 {
+    @include col(3/12);
+  }
+
+  #coluna-2 {
+    @include col(4/12);
+
+    li:last-child {
+      margin-left: 1.5em;
+    }
+  }
+
+  .app_download a {
+    @include col(2/12);
+  }
+
+  .form_cadastro {
+    @include col(8/12, $offset:2/12);
+    @include cf();
+    margin-top: 2em;
+  }
+}
+
+//768px
+@include rwd(g) {
+  .figura_bloco {
+    @include col(8/12, $offset:2/12);
+    text-align: center;
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .texto_bloco {
+    @include col(8/12, $offset:2/12);
+    margin-top: 48px;
+  }
+
+  .mini_grid {
+    @include col(8/12, $offset:2/12);
+
+    .mini_figura {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .calltoaction {
+    .texto_bloco {
+      @include col(8/12, $offset:2/12);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .screenshot_app {
+      @include col(8/12, $offset:2/12);
+    }
+
+    h2 {
+      font-size: 2.8em;
+    }
+  }
+
+  .profissional {
+    @include col(1/2, $uncycle:3, $cycle:2);
+  }
+
+  .cards {
+    @include cf();
+    @include col(12/12, $offset:0);
+  }
+
+  .meio_bloco {
+    .texto_bloco {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  #coluna-1 {
+    width: 50%;
+    float: left;
+    margin: 0 0 48px 0;
+  }
+
+  #coluna-3 {
+    width: 50%;
+    float: left;
+    margin: 0 0 48px 0;
+  }
+
+  #coluna-2 {
+    width: 50%;
+    float: left;
+    margin: 0 0 48px 0;
+  }
+
+  .app_download a {
+    width: 50%;
+    float: left;
+    margin: 0 0 48px 0;
+  }
+  
+  .coluna {
+    &.colune-left {
+      @include col(8/10, $offset:1/10);
+      margin-top: 3em;
+    }
+
+    &.coluna_03 {
+      @include col(6/10, $offset:2/10);
+      margin-top: 2em;
+      margin-bottom: 7em;
+    }
+  }
+
+  #screenshot_01 {
+    @include col(8/10, $offset:1/10);
+    text-align: center;
+  }
+
+  #screenshot_02 {
+    @include col(8/10, $offset: 1/10);
+    margin-bottom: 7em;
+  }
+
+  .intro_full {
+    h1 {
+      color: $corTexto;
+      width: 100%;
+      float: none;
+      margin: 0;
+    }
+    .texto_intro_full {
+      width: 100%;
+      float: none;
+    }
+  }
+
+  #hero_miniclinic {
+    .intro {
+      @include col(8/12, $offset:4/12);
+    }
+  }
+
+  .form_cadastro {
+    @include col(10/12, $offset:1/12);
+    @include cf();
+    margin-top: 2em;
+  }
+}
+
+//667px
+@include rwd(m) {
+  .figura_bloco {
+    @include col(10/12, $offset:1/12);
+    text-align: center;
+    height: auto;
+    margin-bottom: 32px;
+  }
+  
+  #hero_home {
+    background: url("../../img/hero_home.png") no-repeat -1240px bottom #54bed6;
+  }
+
+  .texto_bloco {
+    @include col(10/12, $offset:1/12);
+  }
+
+  .mini_grid {
+    @include col(10/12, $offset:1/12);
+  }
+
+  .calltoaction {
+    .texto_bloco {
+      @include col(10/12, $offset:1/12);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .screenshot_app {
+      @include col(10/12, $offset:1/12);
+    }
+  }
+
+  .plano {
+    @include col(6/12, $offset: 3/12);
+    margin-bottom: 2em;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 12em;
+    }
+  }
+
+  #care {
+    background: #4baac0;
+    padding: 8em 0 6em 0;
+    margin-bottom: 10em;
+    text-align: center;
+
+    #imagem_care {
+      @include col(8/12, $offset:2/12);
+    }
+
+    .texto_bloco {
+      @include col(8/12, $offset:2/12);
+    }
+  }
+
+  .meio_bloco {
+    h2 {
+      margin-top: 0;
+    }
+
+    .texto_bloco {
+      @include col(8/12, $offset:2/12);
+    }
+
+    .figura_bloco {
+      @include col(8/12, $offset:2/12);
+    }
+  }
+
+  .tabs {
+    .nav-tabs {
+      li {
+        padding: 1.25em 3em;
+      }
+    }
+
+    .tab-pane {
+      display: none;
+      background: #fff;
+      border-top: 0;
+      @include borderRadius(2px);
+    }
+  }
+
+  .coluna {
+    &.coluna_03 {
+      @include col(8/10, $offset:1/10);
+      margin-top: 2em;
+      margin-bottom: 3em;
+    }
+  }
+
+  .form_cadastro {
+    @include col(12/12, $offset:0);
+    @include cf();
+    margin-top: 2em;
+  }
+
+  #login {
+    position: relative;
+    top: 10px;
+    left: 5%;
+    padding: 40px;
+    max-width: none;
+    width: 90%;
+    background: #fff;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+//550px
+@include rwd(p) {
+  .intro {
+    @include col(8/12, $offset:0);
+  }
+
+  .figura_bloco {
+    @include col(12/12, $offset:0);
+    text-align: center;
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .texto_bloco {
+    @include col(12/12, $offset:0);
+  }
+
+  .mini_grid {
+    @include col(12/12, $offset:0);
+  }
+
+  .profissional {
+    @include col(1/1, $uncycle:2);
+  }
+
+  .avatar_profissional img {
+    @include center();
+    width: 50%
+  }
+
+  .sidebar {
+    @include col(12/12, $offset: 0);
+    margin-bottom: 48px;
+  }
+
+  .conteudo_direita {
+    @include col(12/12);
+  }
+
+  .cards {
+    @include col(8/12, $offset:2/12);
+    .card {
+      @include col(1/1, $uncycle:3);
+      margin-bottom: 8em;
+    }
+  }
+
+  .plano {
+    @include col(10/12, $offset: 1/12);
+    margin-bottom: 1em;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 12em;
+    }
+  }
+
+  #hero_equipe {
+    .intro {
+      @include col(1/1, $offset:0);
+    }
+  }
+
+  #hero_miniclinic {
+    .intro {
+      @include col(1/1, $offset:0);
+    }
+  }
+
+  .form_cadastro {
+    @include col(10/12, $offset:1/12);
+    @include cf();
+    margin-top: 2em;
+  }
+
+  fieldset,
+  fieldset.fieldset-small {
+    @include col(1/1, $uncycle:3);
+  }
+}
+
+//450px
+@include rwd(xp) {
+  .intro {
+    @include col(1/1, $offset:0);
+  }
+
+  .hero {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  #login {
+    top: 10px;
+    left: 5%;
+    width: 90%;
+  }
+
+  .cards {
+    @include col(10/12, $offset:1/12);
+
+    img {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  .meio_bloco {
+    h2 {
+      margin-top: 0;
+    }
+
+    .texto_bloco {
+      @include col(10/12, $offset:1/12);
+    }
+
+    .figura_bloco {
+      @include col(10/12, $offset:1/12);
+    }
+  }
+
+  #coluna-1 {
+    @include col(8/12, $offset: 2/12);
+  }
+
+  #coluna-3 {
+    @include col(8/12, $offset: 2/12);
+  }
+
+  #coluna-2 {
+    @include col(8/12, $offset: 2/12);
+  }
+
+  .app_download a {
+    @include col(8/12, $offset: 2/12);
+  }
+
+  .texto_mini_bloco h5 {
+    font-size: 1em;
+    word-wrap: break-word;
+  }
+
+  .form_cadastro {
+    @include col(12/12, $offset:0);
+    @include cf();
+    margin-top: 2em;
+  }
+}
+
+//280
+@include rwd(xxp) {
+  .entrar_resp { display: none; }
+
+  .tabs {
+    .nav-tabs {
+      li {
+        padding: 1.25em 2em;
+      }
+    }
+  }
+
+  .mini_bloco {
+    @include col(1/1, $uncycle:2);
+    margin-top: 3em;
+  }
+
+  #coluna-1 {
+    @include col(12/12, $offset: 0/12);
+  }
+
+  #coluna-3 {
+    @include col(12/12, $offset: 0/12);
+  }
+
+  #coluna-2 {
+    @include col(12/12, $offset: 0/12);
+  }
+
+  .app_download a {
+    @include col(12/12, $offset: 0/12);
+  }
+}
+
+
+ 

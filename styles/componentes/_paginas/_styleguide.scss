@@ -1,0 +1,651 @@
+/**
+* Guia de Estilos
+**/
+
+section {
+  width: 100%;
+  @extend %clearfix;
+  margin-bottom: 4em;
+}
+
+/*Toogle Código*/
+.auto-gen-code-snippet {
+  display: none;
+}
+
+.auto-gen-code-visible {
+  display: block;
+}
+
+.intro {
+  margin-bottom: 4em;
+}
+
+.item {
+  width: 100%;
+  @extend %clearfix;
+}
+
+.teste-b {
+  @include col(10/12);
+  background: blue;
+}
+
+
+.legenda {
+  @include col(2/12);
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    border-bottom: 1px solid  $corTexto;
+    margin-bottom: 0;
+  }
+}
+
+
+.legenda ul {
+  color: $corCinza;
+  font-size: 1.2em;
+  margin: 0 0 2em 0;
+  padding: 1em 0 1em 0;
+  @extend .lista-simples;
+
+  li {
+    margin-right: 2em;
+    &:before {
+       content:'\007C';
+       margin-right: 0.5em;
+       font-weight: $bold;
+    }
+  }
+
+  li:first-child:before {
+      content:'';
+      margin-right: 0;
+  }
+}
+
+.code-sample {
+  @include col(10/12);
+  margin-right: 0 !important;
+  border-top: 1px solid $corSuave;
+  margin-top: 3.6em;
+  padding-top: 1.5em;
+
+  &.sample-full {
+    width: 100%;
+    margin: 0;
+    border-top: none;
+  }
+}
+
+.no-code {
+  @include col(10/12);
+  border-top: 1px solid $corSuave;
+  margin-top: 3.6em;
+  padding-top: 1.5em;
+
+  &.sample-full {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+#navega .auto-gen-code-visible,
+#rodape .auto-gen-code-visible {
+  @extend %clearfix;
+  display: block;
+  float: none;
+  margin: 2em auto;
+  width: 1200px;
+}
+
+
+#snippet-toggle {
+  background: $corSecundaria;
+  color: #FFF;
+  padding: 1em;
+  border: none;
+  font-size: 1.4em;
+  width: 200px;
+  @include borderRadius(2px);
+  &:hover {
+    background: lighten($corSecundaria,10);
+  }
+}
+
+#snippet-toggle.snippet-on {
+  background: $corPrincipal;
+  &:hover {
+    background: lighten($corPrincipal,10);
+  }
+}
+
+#snippet-toggle.snippet-off {
+  background: $corSecundaria;
+  &:hover {
+    background: lighten($corSecundaria,10);
+  }
+}
+
+.auto-gen-code-snippet code {
+  background: #2d323b;
+  color: lighten(#2d323b,40);
+  border: none;
+  width: 100px;
+}
+
+pre.auto-gen-code-visible {
+  background: #2d323b;
+  color: lighten(#2d323b,40);
+  padding: 1.5em;
+  font-size: 1.2em;
+  display: block;
+  @extend %clearfix;
+  @include col(10/12);
+  margin-top: 1em;
+}
+
+/*Header*/
+.header-guia {
+  padding: 2em 0 2em 0;
+  @extend %clearfix;
+  @include sombra;
+
+  a {
+    color: $corTexto;
+    text-decoration: none;
+  }
+
+  h1, h2 {
+    margin:0;
+  }
+
+  .logo {
+    @include col(2/12);
+  }
+
+  nav {
+    @include col(10/12);
+  }
+
+  ul {
+    float: right;
+  }
+
+  li {
+    margin-left: 2em;
+    display: inline-block;
+    font-size: $fontSize;
+  }
+
+  em {
+    background: $corPrincipal;
+    color: #FFF;
+    padding: 0.5em;
+    @include borderRadius(2px);
+    display: block;
+  }
+}
+
+
+.hgroup {
+  width: 100%;
+  padding: 3em 0 3em 0;
+  margin: 0 0 4em 0;
+  background: #FFF;
+  @include sombra;
+  @extend %clearfix;
+
+  h1 {
+    font-size: 2.8em;
+    margin: 0;
+    width: 100%;
+    display: block;
+  }
+
+  h2 {
+    width: 100%;
+    display: block;
+
+    span {
+      color: $corSuave;
+    }
+  }
+}
+
+.toc {
+  color: #FFF;
+  background: $corPrincipal;
+  padding: 0 0 2em 0;
+  margin-bottom: 0;
+  @extend %clearfix;
+
+  hgroup {
+    background: darken($corPrincipal, 10);
+    border: 0;
+    margin-bottom: 2em;
+
+    h1, h2 {
+      color: #FFF;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    @include col(12/12);
+  }
+
+  ul a {
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 3em;
+    &:hover {
+      color: $corSuave;
+    }
+  }
+}
+
+/*Cores*/
+.cor {
+  @include col(2/12);
+  @extend %clearfix;
+  @include borderRadius(4px);
+  background: #FFF;
+  border: 1px solid $corSuave;
+  margin-bottom: 2em;
+  text-align: center;
+
+  .amostra {
+    width: 100%;
+    margin-bottom: 2em;
+    height: 10em;
+  }
+
+  ul {
+    margin: 1em;
+    font-size: 1.4em;
+    @extend .lista-simples;
+
+    strong {
+      font-size: 1.1em;
+    }
+  }
+
+  span {
+    font-size: 0.8em;
+  }
+}
+
+
+.split {
+  .amostra {
+    width: 80%;
+    float: left;
+  }
+
+  .escuro {
+    height: 5em;
+    width: 20%;
+    float: right;
+  }
+
+  .claro {
+    margin-bottom: 2em;
+    height: 5em;
+    width: 20%;
+    float: right;
+  }
+}
+
+$cor1: $corPrincipal;
+$cor2: $corSecundaria;
+$cor3: $corSucesso;
+$cor4: $corAlerta;
+$cor5: $corDestaque;
+$cor6: $corSuave;
+
+.cor-1 {
+  @extend .cor;
+
+  .amostra {
+    background: $cor1;
+  }
+
+  .escuro {
+    background: darken($cor1,10);
+  }
+
+  .claro {
+    background: lighten($cor1,10);
+  }
+
+  strong{
+    color: $cor1;
+  }
+}
+
+.cor-2 {
+  @extend .cor;
+
+  .amostra {
+    background: $cor2;
+  }
+
+  .escuro {
+    background: darken($cor2,10);
+  }
+
+  .claro {
+    background: lighten($cor2,10);
+  }
+
+
+  strong {
+    color: $cor2;
+  }
+}
+
+.cor-3 {
+  @extend .cor;
+
+  .amostra {
+    background: $cor3;
+  }
+
+  .escuro {
+    background: darken($cor3,10);
+  }
+
+  .claro {
+    background: lighten($cor3,10);
+  }
+
+  strong {
+    color: $cor3;
+  }
+
+}
+
+.cor-4 {
+  @extend .cor;
+
+  .amostra {
+    background: $cor4;
+  }
+
+  .escuro {
+    background: darken($cor4,10);
+  }
+
+  .claro {
+    background: lighten($cor4,10);
+  }
+
+  strong {
+    color: $cor4;
+  }
+}
+
+.cor-5 {
+  @extend .cor;
+
+  .amostra {
+    background: $cor5;
+  }
+
+  .escuro {
+    background: darken($cor5,10);
+  }
+
+  .claro {
+    background: lighten($cor5,10);
+  }
+
+  strong {
+    color: $cor5;
+  }
+}
+
+.cor-6 {
+  @extend .cor;
+
+  .amostra {
+    background: $cor6;
+  }
+
+  .escuro {
+    background: darken($cor6,10);
+  }
+
+  .claro {
+    background: lighten($cor6,10);
+  }
+
+  strong {
+    color: $cor6;
+  }
+}
+
+/*Tipografia*/
+
+.amostras {
+  @extend %clearfix;
+}
+
+.tipo {
+  @include col(4/12);
+  @extend %clearfix;
+  @include borderRadius(4px);
+  background: #FFF;
+  border: 1px solid $corSuave;
+  margin-bottom: 2em;
+  text-align: center;
+
+  .amostra {
+    width: 100%;
+    background: lighten($corSuave,10);
+  }
+
+  ul {
+    margin: 1em;
+    font-size: 1.4em;
+    @extend .lista-simples;
+
+    strong {
+      font-size: 1.1em;
+    }
+  }
+
+  h2 {
+    font-size: 9em;
+    color: $corCinza;
+    margin: 0;
+  }
+
+  .tipo-1 h2{
+    font-weight: $light;
+  }
+
+  .tipo-2 h2{
+    font-weight: $weight;
+  }
+
+  .tipo-3 h2{
+    font-weight: $bold;
+  }
+}
+
+/*Grid*/
+.grid-6 .col-grid {
+  @include col(2/12);
+  margin-bottom: 2em;
+}
+
+.grid-4 .col-grid {
+  @include col(3/12);
+  margin-bottom: 2em;
+}
+
+.grid-3 .col-grid {
+ @include col(4/12);
+  margin-bottom: 2em;
+}
+
+.grid-2 .col-grid {
+  @include col(6/12);
+  margin-bottom: 2em;
+}
+
+.grid-1 .col-grid {
+  @include col(1);
+}
+
+.col-grid {
+  background: $corDestaque;
+  @include col(1/12);
+  height: 2em;
+  color: #FFF;
+  font-size: 1.6em;
+  margin-bottom: 2em;
+
+  span {
+    display: block;
+    text-align: center;
+    margin-top: 0.3em;
+  }
+}
+
+/*Icones*/
+
+.ico {
+  @include col(2/12);
+  @extend %clearfix;
+  @include borderRadius(4px);
+  background: #FFF;
+  border: 1px solid $corSuave;
+  margin-bottom: 2em;
+  text-align: center;
+
+  .amostra {
+    width: 100%;
+    background: lighten($corSuave,10);
+  }
+
+  ul {
+    margin: 1em;
+    font-size: 1.4em;
+    @extend .lista-simples;
+
+    strong {
+      font-size: 1.1em;
+    }
+  }
+}
+
+.icones-grandes .ico {
+  @include col(3/12);
+  .amostra {
+    height: 160px;
+    position :relative;
+    img {
+     @include align(both);
+     max-width: 40%;
+    }
+  }
+  .amostra.tile {
+    background: $corPrincipal;
+  }
+  .amostra.fav {
+    img {
+      padding-top: 1em;
+    }
+  }
+}
+
+/*Botões*/
+#botoes {
+  .botao,
+  a.botao,
+  button.botao {
+    width: 160 / 1000 * 100%;
+    margin-right: 2.8em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+label {
+  display: block;
+}
+
+input,
+input[type='text'],
+textarea,
+select {
+  @include col(4/12);
+  margin-left: 0;
+}
+
+.inline {
+  label {
+   display: inline-block;
+   margin-right: 1em;
+  }
+  input {
+    width: auto;
+    float: none;
+    margin-right: 0.25em;
+  }
+}
+
+input.campo-texto-valido {
+  border: 1px solid $corSucesso;
+}
+
+input.campo-texto-invalido {
+  border: 1px solid $corAlerta;
+}
+
+#lista {
+  ul {
+    font-size: $fontSize;
+  }
+  .legenda ul {
+    font-size: 1.2em;
+  }
+}
+
+/*Tooltip*/
+
+#tooltips {
+  span {
+    font-size: $fontSize;
+    margin-right: 4em;
+  }
+}
+
+/*Lightbox*/
+
+.gallery {
+  a {
+    font-size: $fontSize;
+  }
+  .foto {
+    @include col(2/10, $cycle:5);
+    margin-bottom: 2em;
+  }
+}
+
+/*Abas*/
+  .tab-pane {
+    h5 {
+      margin: 0;
+    }
+  }

@@ -1,0 +1,23 @@
+/**
+* Paginação
+**/
+
+
+ul.paginacao {
+  font-size: $fontSize;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    background: $corPaginacao;
+    border: 1px solid $corSuave;
+  }
+  a, a:hover {
+    text-decoration: none;
+    color: $corTexto;
+  }
+  a:hover,  li.current a {
+    color: $corSelecionado;
+  }
+}

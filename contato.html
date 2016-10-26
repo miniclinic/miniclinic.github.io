@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contato | Miniclinic</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/icons/favicon.png">
+
+    <!-- Metas para Design Responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="MobileOptimized" content="480" />
+    <meta name="HandheldFriendly" content="True">
+
+    <!-- Homescreen Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="196x196" href="img/touch/chrome-touch-icon-196.png">
+
+    <!-- Homescreen iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-180.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-76.png" sizes="76x76">
+    <link rel="apple-touch-icon-precomposed" href="img/icons/apple-touch-icon-precomposed.png">
+
+    <!-- Tile Win8 -->
+    <meta name="msapplication-TileImage" content="img/icons/tile.png">
+    <meta name="msapplication-TileColor" content="#54BED6">
+
+    <!-- build:css styles/componentes/main.min.css -->
+    <link rel="stylesheet" href="styles/componentes/componentes.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!--Modernizr-->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!--selectivizr-->
+    <script src="js/vendor/selectivizr-min.js"></script>
+
+    <!--Google Fonts - PT SANS-->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+   <header class="menu-sup">
+      <div class="wrap">
+        <figure id="logo">
+            <a href="index.html">
+                <!--[if lte IE 8]><img src="img/logo_miniclinic.png" alt="Logo"><![endif]-->
+                <!--[if gt IE 8]><img src="img/logo_miniclinic.svg" alt="Logo"><![endif]-->
+                <!--[if !IE]> --><img src="img/logo_miniclinic.svg" alt="Logo"><!-- <![endif]-->
+            </a>
+        </figure>
+        <nav class="nav">
+            <ul>
+<!--               <li><a href="/#apps" title="#apps" class="tab-menu" data-tab="tab1">A Plataforma</a></li> -->
+              <li><a href="/#apps" title="#apps" class="tab-menu" data-tab="tab2">Minipress</a></li>
+              <li><a href="faq.html">Perguntas Frequentes</a></li>
+<!--               <li><a href="https://api.miniclinic.com.br/pages/signup">Cadastro</a></li>
+              <li><a href="https://api.miniclinic.com.br/pages/login" class="destaque_menu">Entrar</a></li> -->
+            </ul>
+        </nav>
+
+        <a class="toggle-menu" title="Menu">Menu</a>
+<!--         <a href="login.html" class="entrar_resp">Entrar</a> -->
+      </div>
+    </header>
+
+    <div class="barra_titulo">
+      <div class="wrap">
+        <h1>Contato</h1>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="wrap">
+        <form id="contatoForm" class="form_cadastro" method="post">
+
+          <fieldset>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" autocomplete="nome" placeholder="Meu nome" autofocus required>
+          </fieldset>
+
+	  <fieldset class="fieldset-long">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="seu@email.com" required>
+	  </fieldset>
+
+	  <fieldset class="fieldset-long">
+            <label for="message">Mensagem:</label>
+            <textarea name="message" id="message" rows="10" cols="50" placeholder="Escreva sua mensagem aqui..." required></textarea>
+	  </fieldset>
+
+
+          <input type="submit" id="submit" class="cadastrar botao" name="enviar" value="Enviar">
+
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+    <div class="wrap">
+        <figure class="logo_footer">
+            <!--[if lte IE 8]><img src="img/logo_miniclinic_quadrado.png" alt="Logo" class="logo"><![endif]-->
+            <!--[if gt IE 8]><img src="img/logo_miniclinic_quadrado.svg" alt="Logo" class="logo"><![endif]-->
+            <!--[if !IE]> --><img src="img/logo_miniclinic_quadrado.svg" alt="Logo" class="logo"><!-- <![endif]-->
+        </figure>
+        <ul id="coluna-1">
+            <li><strong>Saiba mais:</strong></li>
+            <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+        <ul id="coluna-2">
+            <li><strong>Contato:</strong></li>
+            <li><img src="img/icone_telefone.png" alt="" class="icone">(46) 3225-5719</li>
+            <li><img src="img/icone_email.png" alt="" class="icone"><a href="contato.html">Entre em contato</a></li>
+            <li><img src="img/icone_localizacao.png" alt="" class="icone">Rua Tapajós, 152, Centro</li>
+            <li>Pato Branco - PR </li>
+        </ul>
+        <ul id="coluna-3">
+            <li><strong>Social:</strong></li>
+            <li><img src="img/icone_facebook.png" alt="" class="icone"><a href="#">Facebook</a></li>
+<!--             <li><img src="img/icone_twitter.png" alt="" class="icone"><a href="#">Twitter</a></li>
+            <li><img src="img/icone_googleplus.png" alt="" class="icone"><a href="#">Google+</a></li>
+            <li><img src="img/icone_instagram.png" alt="" class="icone"><a href="#">Instagram</a></li> -->
+        </ul>
+        <div class="app_download">
+            <a href="#" title="Download no Google Play"><img src="img/download_googleplay.png" alt=""></a>
+            <!--<a href="#" title="Baixar na App Store"><img src="img/download_appstore.png" alt=""></a>-->
+        </div>
+    </div>
+  </footer>
+    <footer class="creditos">
+        <div class="wrap">
+            <ul>
+                <li><small>2015. <b>PopUp Design</b> Todos os direitos reservados</small></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68302709-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Scripts não minificados pelo Gulp -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/contato.js"></script>
+    <!-- endbuild -->
+
+    
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,93 @@
+/**
+* Texto
+**/
+
+body {
+  font-family: $fontFamily;
+}
+
+p {
+  font-family: $fontFamily;
+  font-size:   $fontSize;
+  margin: 0 0 $lineHeight / 2;
+  font-weight: $weight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: $lineHeight;
+  margin: ($lineHeight / 2) 0;
+  font-weight: $hWeight;
+  color: $corTitulo;
+}
+
+h1 {
+  font-size: 4.8em;
+  line-height: 1.25;
+  color: #fff;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 3.6em;
+}
+
+h3 {
+  font-size: 2.8em;
+}
+
+h4 {
+  font-size: 2.4em;
+}
+
+h5 {
+  font-size: 1.8em;
+}
+
+h6 {
+  font-size: 1.6em;
+}
+
+b {
+  font-weight: $bold;
+}
+
+strong {
+  font-weight: $bold;
+  color: $corDestaque;
+}
+
+mark {
+  background: $corDestaque;
+  padding: 0.2em;
+  @include text-contrast($corBotao);
+}
+
+small {
+  font-size: 1.2em;
+}
+
+pre {
+
+}
+
+code {
+  background: #ececec;
+  border: 1px solid $corBorda;
+  color: #d14;
+  padding: 0.2em;
+  @include borderRadius(4px);
+}
+
+address {
+  font-size: $fontSize;
+  margin-bottom: $lineHeight;
+
+  strong {
+    color: $corTexto;
+  }
+}
+
+@include selection {
+    color: #FFF;
+    background: $corDestaque;
+}

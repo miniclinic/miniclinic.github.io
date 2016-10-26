@@ -1,0 +1,16 @@
+input[required],
+input[type='email'],
+input {
+  width: 100%;
+  border: 1px solid #ccc;
+  transition: all 0.25s ease-in-out 0s
+}
+
+input:focus {
+  /*transition: all 0.5s ease-in-out;*/
+  border: 1px solid #7689d6;
+}
+
+#contatoForm {
+  height: 480px;
+}

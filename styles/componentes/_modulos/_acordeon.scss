@@ -1,0 +1,48 @@
+.acordeon {
+	background: $bgAcordeon;
+	overflow: hidden;
+	margin-bottom: 6em;
+
+	.divisao {
+		display: block;
+
+		h3 {
+			background: $bgTituloAcordeon;
+			color: $corTituloAcordeon;
+			font-size: $fontSizeHAcordeon;
+			cursor: pointer;
+			padding: 1em 1em 1em 0;
+			margin: 0 0 1px;
+			position: relative;
+			text-transform: uppercase;
+			border-bottom: 1px solid $corBorda;
+
+			&:hover {
+				color: $corDestaque;
+			}
+
+			&:last-child {
+				margin: 0;
+				border: 0;
+			}
+
+			&.aberto:after {
+				content: $sinalFecharAcordeon;
+				position: absolute;
+				right: 10px;
+			}
+
+			&:after {
+				content: $sinalAbrirAcordeon;
+				position: absolute;
+				right: 10px;
+			}
+		}
+
+		.txt {
+			display: none;
+			overflow: hidden;
+			padding: 2em 0 1em 0;
+		}
+	}
+}

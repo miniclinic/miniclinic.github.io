@@ -1,0 +1,20 @@
+/**
+* Links
+**/
+
+
+a {
+  color: $corLink;
+  &:hover {
+  	color: $corHover;
+  }
+}
+
+nav > a:hover {
+	text-decoration: none;
+}
+
+li.current,
+li.current a {
+	color: $corSelecionado;
+}

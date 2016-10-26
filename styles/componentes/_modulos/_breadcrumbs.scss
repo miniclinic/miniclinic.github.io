@@ -1,0 +1,33 @@
+/**
+* Breadcrumbs
+**/
+
+
+.breadcrumbs {
+  li {
+    float: left;
+    list-style: none;
+    font-size: $fontSize;
+    &:before {
+      content: "";
+      margin-right: 0.5em;
+      &:firt-child {
+        margin-right: 0;
+      }
+    }
+    &:after {
+      content: "/";
+      margin-left: 0.5em;
+      color: $corSuave;
+    }
+    &:last-child:after {
+      content: "";
+    }
+    a {
+      color: $corBreadcrumb;
+       &:hover {
+        color: $corHover;
+      }
+    }
+  }
+}

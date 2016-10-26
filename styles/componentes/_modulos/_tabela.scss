@@ -1,0 +1,100 @@
+/**
+* Tabela
+**/
+
+table {
+  @include transition(all, 0.25s, ease-in-out);
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+    margin-bottom: $lineHeight;
+    font-size: $fontSize - 0.2em;
+    line-height: $lineHeight;
+    text-align: left;
+    color: $corTexto;
+    th,
+    td {
+        padding: 0.8em;
+        line-height: $lineHeight;
+        text-align: left;
+        vertical-align: top;
+        border-top: 1px solid $corBorda;
+        background: $corTabela;
+    }
+
+    th {
+      font-weight: $bold;
+    }
+
+    thead th {
+      vertical-align: bottom;
+    }
+
+    caption + thead tr:first-child th,
+    caption + thead tr:first-child td,
+    colgroup + thead tr:first-child th,
+    colgroup + thead tr:first-child td,
+    thead:first-child tr:first-child th,
+    thead:first-child tr:first-child td {
+      border-top: 0;
+    }
+
+    tbody + tbody {
+      border-top: 1px solid $corBorda;
+    }
+
+	table {
+      background-color: $corTabela;
+    }
+      
+    caption {
+      text-align: left;
+      margin-bottom: 1em;
+      font-size: $fontSize - 0.5em;
+    }
+}
+
+ /*Tabela Zebrada*/
+ .zebra {
+   tbody {
+     > tr:nth-child(odd) > td,
+     > tr:nth-child(odd) > th {
+       background-color: $corTabelaHover;
+     }
+   }
+ }
+
+/*Tabela com Bordas*/
+.tabela-borda {
+  border: 1px solid $corBorda;
+  border-collapse: separate; 
+  *border-collapse: collapse; 
+  border-left: 0;
+  @include borderRadius(2px);
+  th,
+  td {
+    border-left: 1px solid $corBorda;
+  }
+  caption + thead tr:first-child th,
+  caption + tbody tr:first-child th,
+  caption + tbody tr:first-child td,
+  colgroup + thead tr:first-child th,
+  colgroup + tbody tr:first-child th,
+  colgroup + tbody tr:first-child td,
+  thead:first-child tr:first-child th,
+  tbody:first-child tr:first-child th,
+  tbody:first-child tr:first-child td {
+    border-top: 0;
+  }
+}
+ 
+/*Hover*/
+table,
+table.zebra {
+   tbody {
+     tr:hover > td,
+     tr:hover > th {
+       background-color: $corTabelaHover;
+     }
+   }
+ }

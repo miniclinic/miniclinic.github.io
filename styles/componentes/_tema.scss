@@ -1,0 +1,105 @@
+/**
+* Estilos do Tema
+**/
+
+//Cores Básicas
+
+$corPrincipal:         #54BED6;
+$corSecundaria:        #B2EBF2;
+$corSucesso:           #00526a;
+$corAlerta:            #ff006a;
+$corDestaque:          #7689d6;
+$corSuave:             #eff9fb;
+$corSelecionado:       $corDestaque;
+
+$corCinza:             #969696;
+
+//Bordas
+$radius:               2px;
+$corBorda:             #CCC;
+
+//Tipografia
+$fontFamily:           "PT Sans", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+$lineHeight:           1.5em;
+$fontSize:             1.6em;
+$fontSmall:            1.4em;
+$weight:               400;
+$hWeight:              700;
+$bold:                 700;
+$light:                300;
+$corTexto:             #272834;
+$corTitulo:            #272834;
+
+//Links
+$corLink:              $corPrincipal;
+$corHover:             $corDestaque;
+
+//Botões
+$corBotao:             $corPrincipal;
+$corBotaoHover:        $corDestaque;
+
+//Menu
+$fontSizeMenu:         1.4em;
+$fontSizeSubMenu:      1em;
+$corLinkMenu:          $corCinza;
+$corLinkMenuHover:     $corPrincipal;
+$bgMenu:               #FFF;
+$alturaMenu:           120px;
+$alturaLinhaSubMenu:   32px;
+$textDecoration:       none;
+$bgSubMenu:            #FFF;
+$corBordaSubMenu:      #eee;
+$corLinkSubMenu:       $corCinza;
+$corLinkSubMenuHover:  $corHover;
+$setaSubMenuBaixo:     "↓";
+$setaSubMenuLado:      "»";
+
+//Formulario
+$corBordaForm:         $corBorda;
+$fontSizeLabel:        1.4em;
+$corLabel:             $corTexto;
+$fontSizeForm:         1.4em;
+$fontSizeLegend:       1.4em;
+$formPadding:          0.75em;
+
+
+//Paginação
+$corPaginacao:         #fff;
+
+//Tabela
+$corTabela:            #f7f7f7;
+$corTabelaHover:       #ececec;
+
+//Navegação em Abas
+$corBordaAba:          $corBorda;
+$corAbaInativa:        #fff;
+$corAbaAtiva:          $corPrincipal;
+$fontSizeAba:          1.4em;
+$paddingAba:           1.25em 6em;
+$corAbaHover:          $corAbaAtiva;
+$corLinkAba:           $corTexto;
+$corLinkAbaHover:      #fff;
+
+//Acordeon
+$bgAcordeon:           #FFF;
+$bordaAcordeon:        1px solid $corBorda;
+$bgTituloAcordeon:     #fff;
+$corTituloAcordeon:    $corPrincipal;
+$fontSizeHAcordeon:    1.4em;
+$sinalAbrirAcordeon:   "▼";
+$sinalFecharAcordeon:  "▲";
+
+//Breadcrumbs
+$corBreadcrumb:        $corCinza;
+
+//Background
+$corBG:                #fff;
+$corFooter:            $corTexto;
+
+body {
+  background:          $corBG;
+}
+
+.wrap {
+	@include center();
+}

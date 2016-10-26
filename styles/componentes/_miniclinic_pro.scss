@@ -1,0 +1,97 @@
+/**
+* Miniclinic Pro
+**/
+
+.meio_bloco {
+	@include cf();
+	margin-top: 8em;
+
+	.texto_bloco {
+		@include col(5/12, $offset:1/12);
+	}
+
+	.figura_bloco {
+		@include col(4/12, $offset:1/12);
+	}
+}
+
+.planos {
+	@include cf();
+	@include col(10/12, $offset:1/12);
+}
+
+.plano {
+	@include col(1/3 10/12);
+	@include borderRadius(4px);
+	border: 1px solid $corBorda;
+	margin-bottom: 12em;
+	padding: 4em 2em;
+	text-align: center;
+
+	ul {
+		font-size: 1.4em;
+		color: $corCinza;
+		line-height: 2;
+	}
+
+	img {
+		@include center();
+	}
+}
+
+#care {
+	background: #4baac0;
+	padding: 8em 0 6em 0;
+	margin-bottom: 10em;
+
+	#imagem_care {
+		@include col(6/12, $offset:1/12);
+	}
+
+	.texto_bloco {
+		margin-top: 7em;
+		@include col(4/12);
+		p, h2 {
+			color: #fff;
+		}
+	}
+}
+
+#hero_miniclinic_pro {
+	background: #f1f2f8;
+
+}
+
+.intro_full {
+	@include cf();
+	margin-bottom: 6em;
+	@include col(10/12, $offset:1/12);
+
+	h1 {
+		color: $corTexto;
+		width: 50%;
+		float: left;
+		margin: 0;
+	}
+	.texto_intro_full {
+		width: 50%;
+		float: right;
+	}
+	p {
+		
+		margin: 0.5em auto;
+		font-size: 1.8em;
+		margin-bottom: 1em;
+
+		a {
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $corTexto;
+			font-weight: $bold;
+			&:hover {
+				color: $corPrincipal;
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+/**
+* Listas
+**/
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: disk;
+  list-style-position: inside;
+}
+
+ul.lista-simples,
+ol.lista-simples {
+	list-style:none;
+	font-size: $fontSize;
+}
+
+ul.lista-numerada,
+ol  {
+  list-style-type: decimal-leading-zero;
+  font-size: $fontSize;
+}
+
+dl {
+	font-size: $fontSize;
+	dt {
+		font-weight: $bold;
+	}
+	dd {
+		margin: 0 0 $lineHeight 0;
+	}
+}
+

@@ -1,0 +1,147 @@
+/**
+* Navegação do Site
+**/
+
+.menu-sup {
+  @extend %clearfix;
+  background: $bgMenu;
+  width: 100%;
+  height: $alturaMenu;
+
+  #logo {
+    @include col(3/12);
+    line-height: $alturaMenu;
+
+    img {
+      max-width: 224px;
+      max-height: 24px;
+    }
+  }
+
+  /*Menu*/
+  .nav {
+    @include col(9/12);
+    margin-right: 0;
+    font-size: $fontSizeMenu;
+
+    ul {
+      list-style: none;
+      float: right;
+
+      li {
+        display: inline-block;
+        margin: 0 1.5em;
+
+        /*Links no Primeiro Nível*/
+        a {
+          display: block;
+          color: $corLinkMenu;
+          line-height: $alturaMenu;
+          text-decoration: $textDecoration;
+          text-transform: uppercase;
+          font-weight: $bold;
+          cursor: pointer;
+
+          &:hover {
+            color: $corLinkMenuHover;
+          }
+        }
+
+        a.destaque_menu {
+          @include borderRadius(2px);
+          background: $corPrincipal;
+          color: #fff;
+          line-height: 14px;
+          padding: 0.75em 1.5em;
+          &:hover {
+            background: $corDestaque;
+          }
+        }
+
+        /*Link Selecionado*/
+        &.current a {
+          color: $corLinkMenuHover;
+        }
+
+        /*Link com Submenu*/
+        &.has-child {
+          position: relative;
+
+          a {
+            padding-right: 14px;
+            &:after {
+              content: $setaSubMenuBaixo;
+              position: absolute;
+              right: 0px;
+            }
+          }
+
+          /*Submenu*/
+          .sub-menu {
+            position: absolute;
+            left: 0;
+            top: 99%;
+            width: 180px;
+            background: $bgSubMenu;
+            font-size: $fontSizeSubMenu;
+            display: none;
+
+            ul {
+              @include borderRadius (4px);
+            }
+
+            /*Links do Submenu*/
+            li {
+              display: block;
+              float: none;
+              margin: 0;
+              padding: 0 .5em;
+              position: relative;
+              background: #f8f8f8;
+
+              &:hover {
+                background: #f4f4f4;
+              }
+
+              a {
+                line-height: $alturaLinhaSubMenu;
+                color: $corLinkSubMenu;
+
+                &:hover {
+                  border-bottom: none;
+                  color: $corLinkSubMenuHover;
+                }
+
+                &:after {
+                  content: "";
+                }
+              }
+
+              /*Submenu com terceiro nível de menu*/
+              &.has-child {
+                a:after {
+                  content: $setaSubMenuLado;
+                  right: 5px;
+                }
+
+                /*li segundo nivel mostra menu no hover*/
+                &:hover {
+                  .child-menu {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+
+          /*li primeiro nivel mostra menu no hover*/
+          &:hover {
+            .sub-menu {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

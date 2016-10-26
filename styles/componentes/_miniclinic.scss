@@ -1,0 +1,67 @@
+/**
+* Miniclinic
+**/
+
+.texto_intro_mini {
+	@include cf();
+	position: relative;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 8em;
+	width: 100%;
+
+	h2, p {
+		@include col(4/6, $offset:1/6);
+	}
+	h2 {
+		margin-bottom: 0;
+	}
+}
+
+.cards {
+	@include cf();
+	@include col(10/12, $offset:1/12);
+	position: relative;
+	.card {
+		@include col(4/12, $cycle:3);
+		margin-bottom: 8em;
+	}
+
+	img {
+		border: 1px solid $corBorda;
+		max-width: 100%;
+		margin-bottom: 2em;
+		@include borderRadius(6px);
+		overflow: hidden;
+		position: relative;
+	}
+}
+
+.blocos_simples {
+	@include cf();
+	margin-top: 2em;
+}
+
+.bloco_simples {
+	@include cf();
+	margin: 0;
+
+	h2 {
+		margin: 0;
+	}
+}
+
+
+#mockup_screen {
+	background: $corDestaque;
+	margin: 2em 0 6em 0;
+	padding-top: 48px / 888px * 100%;
+
+	img {
+		max-width: 100%;
+	}
+
+	#figura_mockup {
+		@include col(10/12, $offset:1/12);
+	}
+}

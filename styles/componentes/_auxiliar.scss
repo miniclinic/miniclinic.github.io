@@ -1,0 +1,51 @@
+/**
+* Classes Auxiliares
+**/
+
+/*Clerfix*/
+%clearfix {
+  &::before,
+  &::after {
+    content:"";
+    display:table;
+  }
+  &::after {
+    clear:both;
+  }
+}
+
+/* Esconded de browsers e screenreaders */
+
+%hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Esconde apenas visualmente (disponivel para screenreaders) */
+
+%visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Esconde de screenreaders mas permanece no layout */
+
+%invisible {
+  visibility: hidden;
+}
+
+/* Esconde texto */
+
+%hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}

@@ -1,0 +1,93 @@
+/**
+* Footer
+**/
+
+.footer {
+  @include cf();
+  background: $corTexto;
+  width: 100%;
+  margin-top: 12em;
+  padding: 6em 0 4em 0;
+
+  ul {
+    font-size: 1.6em;
+    list-style: none;
+    color: #c9c9cc;
+  }
+  li {
+    line-height: 1.5;
+  }
+  strong {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: $bold;
+    color: #fff;
+  }
+  a {
+    @include text-contrast($corFooter);
+    text-decoration: underline;
+    font-weight: $weight;
+    color: #c9c9cc;
+    text-decoration: none;
+    &:hover {
+      color: $corPrincipal;
+    }
+  }
+}
+
+.logo_footer {
+  @include col(2/12, $offset:-1/12);
+}
+
+#coluna-1,
+#coluna-3 {
+  @include col(2/12);
+}
+
+#coluna-2 {
+  @include col(3/12);
+
+  li:last-child {
+    margin-left: 1.5em;
+  }
+}
+
+#coluna-2,
+#coluna-3 {
+  img {
+    margin-right: 0.5em;
+  }
+}
+
+.creditos {
+  background: #fff;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    color: $corCinza;
+    font-size: 1.2em;
+
+    li {
+      display: inline-block;
+      padding: 24px 0;
+      margin-left: 1em;
+    }
+
+    a {
+      color: $corCinza;
+      font-size: 1.2em;
+      border-left: 1px solid #ddd;
+      padding-left: 1em;
+      &:hover {
+        color: $corDestaque;
+      }
+    }
+  }
+}
+
+.app_download a {
+  margin-bottom: 1.5em;
+  display: block;
+}

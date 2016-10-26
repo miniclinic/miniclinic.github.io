@@ -1,0 +1,1984 @@
+<!doctype html>
+<html lang="pt-br">
+
+<!--
+Olá mundo!
+Este código fonte foi criado pela PopUp, um estúdio de design e desenvolvimento web de São Paulo, Brasil.
+Se quiser trocar idéias é só procurar a gente nesses canais:
+
+Web:       www.popupdesign.com.br
+E-mail:    contato@popupdesign.com.br
+Telefone:  +55 11 2361-4576
+Facebook:  www.facebook.com/vai.popup
+Twitter:   @popup_design
+
+Divirta-se! :)
+-->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guia de Estilos</title>
+    <meta name="description" content="Guia de Estilos para Interface do Usuario">
+    <link rel="shortcut icon" href="img/icons/favicon.png">
+    <link rel="stylesheet" href="../styles/componentes/componentes.css">
+  </head>
+
+  <body>
+
+  <header class="header-guia">
+    <div class="wrap">
+      <!--[if lte IE 8]><img src="../img/popup-logo.png" alt="Logo" class="logo"><![endif]-->
+      <!--[if gt IE 8]><img src="../img/popup-logo.svg" alt="Logo" class="logo"><![endif]-->
+      <!--[if !IE]> --><img src="../img/popup-logo.svg" alt="Logo" class="logo"><!-- <![endif]-->
+
+       <nav>
+        <ul>
+          <li><a href="mailto:contato@popupdesign.com.br">contato@popupdesign.com.br</a></li>
+          <li><a href="tel:+551123613576">+55 11 2361-3576</a></li>
+          <li><a href="http://www.popupdesign.com.br"><em>popupdesign.com.br</em></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="toc">
+
+    <hgroup class="hgroup">
+      <div class="wrap">
+        <h1>Guia de Estilos</h1>
+        <h2>PopUp Design</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <nav>
+        <ul class="lista-numerada">
+          <li><a href="#intro">Introdução</a></li>
+          <li><a href="#cores">Paleta de Cores</a></li>
+          <li><a href="#tipografia">Tipografia</a></li>
+          <li><a href="#lista">Listas</a></li>
+          <li><a href="#artigo">Artigo</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#icones">Icones</a></li>
+          <li><a href="#botoes">Botões</a></li>
+          <li><a href="#formulario">Formulários</a></li>
+          <li><a href="#navega">Navegação</a></li>
+          <li><a href="#bread">Breadcrumbs</a></li>
+          <li><a href="#pagina">Paginação</a></li>
+          <li><a href="#abas">Abas</a></li>
+          <li><a href="#tabelas">Tabelas</a></li>
+          <li><a href="#mensagens">Mensagens</a></li>
+          <li><a href="#sliders">Slider</a></li>
+          <li><a href="#modal">Lightbox</a></li>
+          <li><a href="#rodape">Rodapé</a></li>
+          <li><a href="#outros">Outros</a></li>
+          <li><a href="#blocos">Blocos</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </section>
+
+   <section id="intro">
+
+    <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 01</span> Introdução</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="intro">
+        <p>Oi amigo! Este Guia de Estilos serve para documentar a interface da PopUp Design.  Utilize o botão abaixo para ativar ou desativar a exibição de códigos auxiliarem em HTML, CSS e JavaScript. Bom projeto! :)</p>
+        <button id="snippet-toggle" class="snippet"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cores">
+
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 02</span> Paleta de Cores</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="cor split cor-1">
+        <div class="amostra">&nbsp;</div>
+        <div class="escuro">&nbsp;</div>
+        <div class="claro">&nbsp;</div>
+        <ul>
+          <li><strong>Azul</strong></li>
+          <li>HEX  #54BED6</li>
+        </ul>
+      </div>
+
+      <div class="cor split cor-2">
+        <div class="amostra">&nbsp;</div>
+        <div class="escuro">&nbsp;</div>
+        <div class="claro">&nbsp;</div>
+        <ul>
+          <li><strong>Turquesa</strong></li>
+          <li>HEX  #54D6D1</li>
+        </ul>
+      </div>
+
+      <div class="cor split cor-3">
+        <div class="amostra">&nbsp;</div>
+        <div class="escuro">&nbsp;</div>
+        <div class="claro">&nbsp;</div>
+        <ul>
+          <li><strong>Sucesso</strong></li>
+          <li>HEX  #00526a</li>
+        </ul>
+      </div>
+
+      <div class="cor split cor-4">
+        <div class="amostra">&nbsp;</div>
+        <div class="escuro">&nbsp;</div>
+        <div class="claro">&nbsp;</div>
+        <ul>
+          <li><strong>Alerta</strong></li>
+          <li>HEX  #FF006A</li>
+        </ul>
+      </div>
+
+      <div class="cor split cor-5">
+        <div class="amostra">&nbsp;</div>
+        <div class="escuro">&nbsp;</div>
+        <div class="claro">&nbsp;</div>
+        <ul>
+          <li><strong>Indigo</strong></li>
+          <li>HEX  #7689d6</li>
+        </ul>
+      </div>
+
+      <div class="cor split cor-6">
+        <div class="amostra">&nbsp;</div>
+        <div class="escuro">&nbsp;</div>
+        <div class="claro">&nbsp;</div>
+        <ul>
+          <li><strong>Azul Suave</strong></li>
+          <li>HEX  #B2EBF2</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="tipografia">
+    <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 03</span> Tipografia</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+
+    <div class="amostras">
+      <div class="tipo">
+          <div class="amostra tipo-1">
+            <h2>Aa</h2>
+          </div>
+          <ul>
+            <li><strong>PT Sans</strong></li>
+            <li>Light</li>
+          </ul>
+      </div>
+
+      <div class="tipo">
+          <div class="amostra tipo-2">
+            <h2>Aa</h2>
+          </div>
+          <ul>
+            <li><strong>PT Sans</strong></li>
+            <li>Regular</li>
+          </ul>
+      </div>
+
+      <div class="tipo">
+          <div class="amostra tipo-3">
+            <h2>Aa</h2>
+          </div>
+          <ul>
+            <li><strong>PT Sans</strong></li>
+            <li>Negrito</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Titulo 1</h3>
+        <ul>
+          <li>&lt;h1&gt;</li>
+          <li><b>Fonte:</b> PT Sans</li>
+          <li><b>Tamanho:</b> 4.8em / 48px</li>
+          <li><b>Peso:</b> 400</li>
+          <li><b>Cor:</b> #272834</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <h1>The quick brown fox jumps over the lazy dog.</h1>
+      </div>
+      </div>
+
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Titulo 2</h3>
+        <ul>
+          <li>&lt;h2&gt;</li>
+          <li><b>Fonte:</b> PT Sans</li>
+          <li><b>Tamanho:</b> 3.6em / 36px</li>
+          <li><b>Peso:</b> 400</li>
+          <li><b>Cor:</b> #272834</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <h2>The quick brown fox jumps over the lazy dog.</h2>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Titulo 3</h3>
+        <ul>
+          <li>&lt;h3&gt;</li>
+          <li><b>Fonte:</b> PT Sans</li>
+          <li><b>Tamanho:</b> 2.8em / 28px</li>
+          <li><b>Peso:</b> 400</li>
+          <li><b>Cor:</b> #272834</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <h3>The quick brown fox jumps over the lazy dog.</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Titulo 4</h3>
+        <ul>
+          <li>&lt;h4&gt;</li>
+          <li><b>Fonte:</b> PT Sans</li>
+          <li><b>Tamanho:</b> 2.4em / 24px</li>
+          <li><b>Peso:</b> 400</li>
+          <li><b>Cor:</b> #272834</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <h4>The quick brown fox jumps over the lazy dog.</h4>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Titulo 5</h3>
+        <ul>
+          <li>&lt;h5&gt;</li>
+          <li><b>Fonte:</b> PT Sans</li>
+          <li><b>Tamanho:</b> 1.8em / 18px</li>
+          <li><b>Peso:</b> 400</li>
+          <li><b>Cor:</b> #272834</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <h5>The quick brown fox jumps over the lazy dog.</h5>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Titulo 6</h3>
+        <ul>
+          <li>&lt;h6&gt;</li>
+          <li><b>Fonte:</b> PT Sans</li>
+          <li><b>Tamanho:</b> 1.6em / 16px</li>
+          <li><b>Peso:</b> 400</li>
+          <li><b>Cor:</b> #272834</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <h6>The quick brown fox jumps over the lazy dog.</h6>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Parágrafo</h3>
+        <ul>
+          <li>&lt;p&gt;</li>
+          <li><b>Fonte:</b> PT Sans</li>
+          <li><b>Tamanho:</b> 1.6em / 16px</li>
+          <li><b>Peso:</b> 400</li>
+          <li><b>Cor:</b> #272834</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, dolor alias deleniti ex ipsam esse, culpa ipsa maiores est suscipit cumque commodi aliquid ea illo, cum eligendi. Adipisci ex itaque, voluptate. Veritatis nesciunt sed porro labore quibusdam libero sequi minima incidunt commodi rerum architecto vel eius odio, ipsum molestiae consequuntur.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Link</h3>
+        <ul>
+          <li>&lt;a&gt;</li>
+          <li><b>Cor:</b> #E8228F</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+         <p>Exemplo de texto contendo um <a href="#">link.</a></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Negrito</h3>
+        <ul>
+          <li>&lt;b&gt;</li>
+          <li><b>Peso:</b> 700</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+          <p>Exemplo de texto contendo um <b>elemento negrito.</b></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Itálico</h3>
+        <ul>
+          <li>&lt;i&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+         <p>Exemplo de texto contendo um <i>elemento itálico.</i></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Destaque</h3>
+        <ul>
+          <li>&lt;strong&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+          <p>Exemplo de texto contendo um <strong>elemento destacado</strong>.</p>
+      </div>
+
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Ênfase</h3>
+        <ul>
+          <li>&lt;em&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+          <p>Exemplo de texto contendo um <em>elemento com ênfase.</em></p>
+      </div>
+
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Sem ênfase</h3>
+        <ul>
+          <li>&lt;small&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <small>Exemplo de texto de importância secundária.</small>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Marcação</h3>
+        <ul>
+          <li>&lt;mark&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+          <p>Exemplo de texto contendo um <mark>elemento marcado.</mark></p>
+      </div>
+
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Código HTML</h3>
+        <ul>
+          <li>&lt;code&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+          <p>Exemplo de texto contendo um código <code>HTML</code>.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Citação</h3>
+        <ul>
+          <li>&lt;q&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+          <p>Exemplo de texto contendo uma <q>citação alinhada.</q></p>
+      </div>
+    </div>
+
+     <div class="item">
+      <div class="legenda">
+        <h3>Bloco de Citação</h3>
+        <ul>
+          <li>&lt;blockquote&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+         <blockquote>
+          <p>Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.</p>
+          <small>Neil Gaiman<cite>Coraline</cite></small>
+          </blockquote>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Endereço</h3>
+        <ul>
+          <li>&lt;address&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <address>
+          <strong>Nome da Empresa</strong><br>
+          <span>Rua Nome da Rua, 1000</span><br>
+          <span>Cidade, CEP</span><br>
+          <span><abbr>Tel:</abbr> (11) 555-5555</span>
+        </address>
+
+        <address>
+          <strong>Nome Sobrenome</strong><br>
+          <a href="mailto:#">contato@popupdesign.com.br</a>
+        </address>
+      </div>
+    </div>
+
+
+    </div>
+  </section>
+
+  <section id="lista">
+    <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 04</span> Listas</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="item">
+        <div class="legenda">
+          <h3>Simples</h3>
+          <ul>
+            <li>&lt;ul&gt;</li>
+            <li>Não-ordenada</li>
+            <li>Sem marcadores</li>
+           </ul>
+        </div>
+
+        <div class="code-sample">
+          <ul class="lista-simples">
+            <li>Item da Lista A</li>
+            <li>Item da Lista B</li>
+            <li>Item da Lista C</li>
+            <li>Item da Lista D</li>
+            <li>Item da Lista E</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="item">
+        <div class="legenda">
+          <h3>Padrão</h3>
+          <ul>
+            <li>&lt;ul&gt;</li>
+            <li>Não-ordenada</li>
+            <li>Com marcadores</li>
+           </ul>
+        </div>
+
+        <div class="code-sample">
+          <ul>
+            <li>Item da Lista A</li>
+            <li>Item da Lista B</li>
+            <li>Item da Lista C</li>
+            <li>Item da Lista D</li>
+            <li>Item da Lista E</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="item">
+        <div class="legenda">
+          <h3>Numérica</h3>
+          <ul>
+            <li>&lt;ol&gt;</li>
+            <li>Ordenada</li>
+           </ul>
+        </div>
+
+        <div class="code-sample">
+          <ol>
+            <li>Item da Lista A</li>
+            <li>Item da Lista B</li>
+            <li>Item da Lista C</li>
+            <li>Item da Lista D</li>
+            <li>Item da Lista E</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="item">
+        <div class="legenda">
+          <h3>Definição</h3>
+          <ul>
+            <li>&lt;dl&gt;</li>
+            <li>Sem marcadores</li>
+           </ul>
+        </div>
+
+        <div class="code-sample">
+          <dl>
+            <dt>Item da Lista A</dt>
+            <dd>Definição Lorem ipsum dolor sit amet.</dd>
+            <dt>Item da Lista B</dt>
+            <dd>Definição Lorem ipsum dolor sit amet.</dd>
+            <dt>Item da Lista C</dt>
+            <dd>Definição Lorem ipsum dolor sit amet.</dd>
+          </dl>
+        </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="artigo">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 05</span> Artigo</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+        <article class="artigo">
+          <h2>Título do Artigo</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat placeat nulla cumque suscipit optio vero odio illo cupiditate velit asperiores distinctio, error <i>commodi consectetur</i>. Dolore quaerat numquam dolor consequuntur necessitatibus molestias voluptatibus officia perspiciatis accusantium. Quibusdam, sint cupiditate dolores enim reiciendis perferendis. Accusamus molestias deleniti ab voluptatum consequatur recusandae nisi.</p>
+          <h3>Subtítulo do Artigo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat placeat nulla cumque suscipit optio vero odio illo cupiditate velit asperiores distinctio, error commodi consectetur. Dolore quaerat numquam dolor consequuntur necessitatibus molestias voluptatibus officia perspiciatis accusantium. Quibusdam, <a href="#">sint cupiditate</a> dolores enim reiciendis perferendis. Accusamus molestias deleniti ab voluptatum consequatur recusandae nisi.</p>
+          <h4>Subtítulo do Artigo</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat placeat nulla cumque suscipit optio vero odio illo cupiditate velit asperiores distinctio, error <b>commodi consectetur</b>. Dolore quaerat numquam dolor consequuntur necessitatibus molestias voluptatibus officia perspiciatis accusantium. Quibusdam, sint cupiditate dolores enim reiciendis perferendis. Accusamus molestias</p>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+          </ul>
+          <h5>Subtítulo do Artigo</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat placeat nulla cumque suscipit optio vero odio illo cupiditate velit asperiores distinctio, error commodi consectetur. <q>Dolore quaerat</q> numquam dolor consequuntur necessitatibus molestias voluptatibus officia perspiciatis accusantium. Quibusdam, sint cupiditate dolores enim reiciendis perferendis. Accusamus molestias</p>
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ut, obcaecati iusto eligendi eum esse laudantium culpa beatae nisi possimus dignissimos, amet eveniet repellat necessitatibus, nihil. Officiis odio atque quo et, repudiandae beatae esse consectetur iste harum incidunt itaque repellendus! Eius consectetur, blanditiis voluptatibus, est soluta dicta illum repudiandae? Tempora?</p>
+            <small>Neil Gaiman<cite>Coraline</cite></small>
+          </blockquote>
+          <h6>Subtítulo do Artigo</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat placeat nulla cumque suscipit optio vero odio illo cupiditate velit asperiores distinctio, error commodi consectetur. <mark>Dolore quaerat numquam</mark> dolor consequuntur necessitatibus molestias voluptatibus officia perspiciatis accusantium. Quibusdam, sint cupiditate dolores enim reiciendis perferendis. Accusamus molestias</p>
+        </article>
+    </div>
+  </section>
+
+  <section id="grid">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 06</span> Grid</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="grid-12">
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+         <div class="col-grid"><span>1 col</span></div>
+      </div>
+
+       <div class="grid-6">
+         <div class="col-grid"><span>2 col</span></div>
+         <div class="col-grid"><span>2 col</span></div>
+         <div class="col-grid"><span>2 col</span></div>
+         <div class="col-grid"><span>2 col</span></div>
+         <div class="col-grid"><span>2 col</span></div>
+         <div class="col-grid"><span>2 col</span></div>
+      </div>
+
+       <div class="grid-4">
+         <div class="col-grid"><span>3 col</span></div>
+         <div class="col-grid"><span>3 col</span></div>
+         <div class="col-grid"><span>3 col</span></div>
+         <div class="col-grid"><span>3 col</span></div>
+      </div>
+
+       <div class="grid-3">
+         <div class="col-grid"><span>4 col</span></div>
+         <div class="col-grid"><span>4 col</span></div>
+         <div class="col-grid"><span>4 col</span></div>
+      </div>
+
+       <div class="grid-2">
+         <div class="col-grid"><span>6 col</span></div>
+         <div class="col-grid"><span>6 col</span></div>
+      </div>
+
+      <div class="grid-1">
+         <div class="col-grid"><span>12 col</span></div>
+      </div>
+
+    </div>
+  </section>
+
+   <section id="icones">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 07</span> Icones</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+    <div class="icones-grandes">
+       <div class="ico">
+          <div class="amostra icone fav">
+             <img src="../img/icons/favicon.png">
+          </div>
+          <ul>
+            <li><strong>Favicon</strong></li>
+          </ul>
+      </div>
+
+      <div class="ico">
+          <div class="amostra icone">
+             <img src="../img/icons/apple-touch-icon-152.png">
+          </div>
+          <ul>
+            <li><strong>Apple Touch Icon</strong></li>
+          </ul>
+      </div>
+
+      <div class="ico">
+          <div class="amostra icone">
+             <img src="../img/icons/chrome-touch-icon-196.png">
+          </div>
+          <ul>
+            <li><strong>Chrome Touch Icon</strong></li>
+          </ul>
+      </div>
+
+
+      <div class="ico">
+          <div class="amostra icone tile">
+             <img src="../img/icons/tile.png">
+          </div>
+          <ul>
+            <li><strong>Windows 8 Tile</strong></li>
+          </ul>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section id="botoes">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 08</span> Botões</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="item">
+      <div class="legenda">
+        <h3>Padrão</h3>
+        <ul>
+          <li>&lt;button&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <button class="botao">Padrão</button>
+        <button class="botao-secundario">Secundário</button>
+        <button class="botao-sucesso">Sucesso</button>
+        <button class="botao-alerta">Alerta</button>
+        <button class="botao-desativado">Desativado</button>
+      </div>
+      </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>3D</h3>
+        <ul>
+          <li>&lt;button&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <button class="botao-sombra">Padrão</button>
+        <button class="botao-sombra botao-secundario">Secundário</button>
+        <button class="botao-sombra botao-sucesso">Sucesso</button>
+        <button class="botao-sombra botao-alerta">Alerta</button>
+        <button class="botao-sombra botao-desativado">Desativado</button>
+      </div>
+      </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Fantasma</h3>
+        <ul>
+          <li>&lt;button&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <button class="botao-fantasma">Padrão</button>
+        <button class="botao-fantasma botao-secundario">Secundário</button>
+        <button class="botao-fantasma botao-sucesso">Sucesso</button>
+        <button class="botao-fantasma botao-alerta">Alerta</button>
+        <button class="botao-fantasma botao-desativado">Desativado</button>
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+    <section id="formulario">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 09</span> Formulários</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <form method="post" id="contato">
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Legenda</h3>
+        <ul>
+          <li>&lt;legend&gt;</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <legend>Legenda do Formulário</legend>
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Campo de texto</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="campo-texto">Campo de texto:</label>
+        <input type="text"  name="campo-texto" id="campo-texto" placeholder="Texto auxiliar">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Campo válido</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="campo-texto-valido">Campo válido:</label>
+        <input type="text"  name="campo-texto-valido" id="campo-texto-valido" class="campo-texto-valido" placeholder="Texto auxiliar">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Campo invalido</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="campo-texto-invalido">Campo inválido:</label>
+        <input type="text"  name="campo-texto-invalido" id="campo-texto-invalido" class="campo-texto-invalido" placeholder="Texto auxiliar">
+      </div>
+     </div>
+
+     <div class="item">
+      <div class="legenda">
+        <h3>Nome</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="name">Nome:</label>
+        <input type="text"  name="nome" id="nome" placeholder="Nome completo" autocomplete="name">
+      </div>
+     </div>
+
+     <div class="item">
+      <div class="legenda">
+        <h3>Sugestões</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+          <li>Datalist</li>
+        </ul>
+      </div>
+
+     <div class="code-sample">
+        <label for="sugerir">Campo com sugestões:</label>
+        <input type="text" name="sugerir" id="sugerir" list="listaDados" placeholder="Ex: Sugestão 1">
+        <datalist id="listaDados">
+          <option value="Sugestão 1"></option>
+          <option value="Sugestão 2"></option>
+          <option value="Sugestão 3"></option>
+        </datalist>
+
+      </div>
+     </div>
+
+
+    <div class="wrap">
+      <div class="item">
+      <div class="legenda">
+        <h3>URL</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: url</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="url">Site:</label>
+        <input type="url" name="url" id="url" placeholder="http://www.nomedosite.com">
+      </div>
+     </div>
+
+     <div class="item">
+      <div class="legenda">
+        <h3>Telefone</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: tel</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone" autocomplete="tel" placeholder="Fixo ou celular" pattern="(([0-9]{2,3})|\([0-9]{2,3}\))[-. ]*(([0-9]{4})[-. ]*([0-9]{4}))">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Email</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: email</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="nome@dominio.com" autocomplete="email" pattern="^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})$">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Busca</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: search</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="busca">Busca:</label>
+        <input type="search" name="busca" id="busca" placeholder="Pesquisar...">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Endereço</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" placeholder="Rua, número e complemento" autocomplete="street-address">
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Cidade:</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" placeholder="Ex: São Paulo" autocomplete="locality">
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Estado:</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="estado">Estado:</label>
+        <input type="text" name="estado" id="estado" placeholder="Ex: SP" autocomplete="region">
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>País:</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="pais">País:</label>
+        <input type="text" name="pais" id="pais"  placeholder="Residência atual"  autocomplete="country">
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="legenda">
+        <h3>CEP:</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep" class="cep" placeholder="_____-___" autocomplete="postal-code" pattern="\d{5}-?\d{3}">
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>CPF:</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="___.___.___-__" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" >
+      </div>
+    </div>
+
+     <div class="item">
+      <div class="legenda">
+        <h3>CNPJ:</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: text</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="cpf">CNPJ:</label>
+        <input type="text" name="cnpj" id="cnpj"  placeholder="__.___.___/____-__" pattern="[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2}" >
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Campo Numérico</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: number</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="numeral">Numeral:</label>
+        <input type="number" name="numeral" id="numeral"  placeholder="0-9">
+      </div>
+     </div>
+
+     <div class="item">
+      <div class="legenda">
+        <h3>Data</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Sem fuso horário</li>
+          <li>Type: date</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Data Local</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Com fuso horário</li>
+          <li>Type: datetime-local</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="data-local">Data Local:</label>
+        <input type="datetime-local" name="data-local" id="data-local">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Horário</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Sem fuso horário</li>
+          <li>Type: time</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="tempo">Horario:</label>
+        <input type="time" name="tempo" id="tempo">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Semana</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Sem fuso horário</li>
+          <li>Type: week</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="semana">Semana:</label>
+        <input type="week" name="semana" id="semana">
+      </div>
+     </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Mês</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Sem fuso horário</li>
+          <li>Type: month</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="mes">Mês:</label>
+        <input type="month" name="mes" id="mes">
+      </div>
+     </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Caixa de texto</h3>
+        <ul>
+          <li>&lt;textarea&gt;</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" placeholder="Comentários"></textarea>
+      </div>
+    </div>
+
+     <div class="item">
+      <div class="legenda">
+        <h3>Lista de Seleção</h3>
+        <ul>
+          <li>&lt;select&gt;</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="selecao">Lista de Seleção:</label>
+        <select id="selecao">
+          <option value="Opção 1">Opção 1</option>
+          <option value="Opção 2">Opção 2</option>
+          <option value="Opção 3">Opção 3</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Caixa de seleção</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>type: checkbox</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <fieldset class="inline">
+          <legend>Caixa de Seleção:</legend>
+
+          <input type="checkbox" id="cb-1" value="Opção 1" />
+          <label for="cb-1">Opção 1</label>
+
+          <input type="checkbox" id="cb-2" value="Opção 2" />
+          <label for="cb-2">Opção 2</label>
+
+          <input type="checkbox" id="cb-3" value="Opção 3" />
+          <label for="cb-3">Opção 3</label>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="legenda">
+        <h3>Botão de opção</h3>
+        <ul>
+           <li>&lt;input&gt;</li>
+          <li>type: radio</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <fieldset class="inline">
+          <legend>Caixa de Seleção:</legend>
+
+          <input type="radio" name="radio" id="rd-1" value="radio 1" />
+          <label for="rd-1">Opção 1</label>
+
+          <input type="radio" name="radio" id="rd-2" value="radio 2" />
+          <label for="rd-2">Opção 2</label>
+
+          <input type="radio" name="radio" id="rd-3" value="radio 3" />
+          <label for="rd-3">Opção 3</label>
+        </fieldset>
+
+      </div>
+    </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Cor</h3>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>Type: color</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <label for="paleta">Cor:</label>
+        <input type="color" name="paleta" id="paleta">
+      </div>
+     </div>
+
+  </div>
+  </form>
+  </div>
+  </section>
+
+   <section id="navega">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 10</span> Navegação</h2>
+      </div>
+    </hgroup>
+
+    <div class="code-sample sample-full">
+      <div class="menu-sup">
+        <div class="wrap">
+
+          <figure id="logo">
+            <a href="#">
+              <!--[if lte IE 8]><img src="../img/logo_miniclinic.png" alt="Logo"><![endif]-->
+              <!--[if gt IE 8]><img src="../img/logo_miniclinic.svg" alt="Logo"><![endif]-->
+              <!--[if !IE]> --><img src="../img/logo_miniclinic.svg" alt="Logo"><!-- <![endif]-->
+            </a>
+          </figure>
+          <nav class="nav">
+            <ul>
+              <li class="current"><a href="#">Para você</a></li>
+              <li><a href="#">Profissionais de Saúde</a></li>
+              <li class="has-child"><a href="#">Serviços</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Dolor</a></li>
+                  <li><a href="#">Sit</a></li>
+                  <li><a href="#">Lorem</a></li>
+                  <li><a href="#">Ipsum</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Cadastro</a></li>
+              <li><a href="#" class="destaque_menu">Entrar</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bread">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 11</span> Breadcrumbs</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="item">
+      <div class="legenda">
+        <h3>Breadcrumbs</h3>
+        <ul>
+          <li>&lt;nav&gt;</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <nav class="breadcrumbs">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li class="current">Link 4</li>
+        </ul>
+        </nav>
+      </div>
+
+    </div></div>
+  </section>
+
+  <section id="pagina">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 12</span> Paginação</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="item">
+      <div class="legenda">
+        <h3>Paginação</h3>
+      </div>
+
+      <div class="code-sample">
+        <ul class="paginacao">
+          <li><a href="#">&laquo;</a></li>
+          <li><a href="#">1</a></li>
+          <li class="current"><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+      </div>
+
+    </div></div>
+  </section>
+
+   <section id="abas">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 13</span> Abas</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="item">
+      <div class="legenda">
+        <h3>Abas</h3>
+      </div>
+
+      <div class="code-sample">
+        <div class="tabs">
+          <ul class="nav-tabs">
+            <li><a data-tab="tab1">Aba 1</a></li>
+            <li><a data-tab="tab2">Aba 2</a></li>
+            <li><a data-tab="tab3">Aba 3</a></li>
+            <li class="ativo"><a data-tab="tab4">Aba 4</a></li>
+            <li><a data-tab="tab5">Aba 5</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane" id="tab1">
+              <h5>Conteúdo da Aba 1</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur accusantium ullam dicta doloremque ab, aliquid et quas officiis molestiae deleniti!</p>
+            </div>
+
+            <div class="tab-pane" id="tab2">
+               <h5>Conteúdo da Aba 2</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum repudiandae numquam totam nemo saepe explicabo rerum ratione adipisci quod. Explicabo.</p>
+            </div>
+
+            <div class="tab-pane" id="tab3">
+               <h5>Conteúdo da Aba 3</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt numquam, sint corporis qui, quos veritatis laborum impedit quas accusamus! Voluptate!</p>
+            </div>
+
+            <div class="tab-pane ativo" id="tab4">
+               <h5>Conteúdo da Aba 4</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, natus, corporis! Aliquid deserunt minus dolor eius possimus qui quibusdam laboriosam?</p>
+            </div>
+
+            <div class="tab-pane" id="tab5">
+               <h5>Conteúdo da Aba 5</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod totam ut labore reprehenderit assumenda quasi necessitatibus amet. Quasi, porro, corporis!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div></div>
+  </section>
+
+  <section id="tabelas">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 14</span> Tabelas</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="item">
+      <div class="legenda">
+        <h3>Tabela Padrão</h3>
+         <ul>
+          <li>&lt;table&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Titulo Coluna 1</th>
+              <th>Titulo Coluna 2</th>
+              <th>Titulo Coluna 3</th>
+              <th>Titulo Coluna 4</th>
+              <th>Titulo Coluna 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Zebrada</h3>
+         <ul>
+          <li>&lt;table&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <table class="zebra">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Titulo Coluna 1</th>
+              <th>Titulo Coluna 2</th>
+              <th>Titulo Coluna 3</th>
+              <th>Titulo Coluna 4</th>
+              <th>Titulo Coluna 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+              <td>Texto do Campo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+       <div class="item">
+      <div class="legenda">
+        <h3>Com bordas</h3>
+         <ul>
+          <li>&lt;table&gt;</li>
+         </ul>
+      </div>
+
+      <div class="code-sample">
+        <table class="tabela-borda">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Titulo Coluna 1</th>
+              <th>Titulo Coluna 2</th>
+              <th>Titulo Coluna 3</th>
+              <th>Titulo Coluna 4</th>
+              <th>Titulo Coluna 5</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+            <td>Texto do Campo</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="mensagens">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 15</span> Mensagens</h2>
+      </div>
+    </hgroup>
+
+    <div class="wrap">
+      <div class="item">
+      <div class="legenda">
+        <h3>Sucesso</h3>
+      </div>
+
+      <div class="code-sample">
+        <div class="msg msg-sucesso">
+          <h3>Mensagem enviada com sucesso!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>. Esse, ipsa.</p>
+        </div>
+      </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Erro</h3>
+      </div>
+
+      <div class="code-sample">
+        <div class="msg msg-erro">
+          <h3>Erro de comunicação</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>. Esse, ipsa.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="sliders">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 16</span> Sliders</h2>
+      </div>
+    </hgroup>
+
+     <div class="wrap">
+      <div class="item">
+      <div class="legenda">
+        <h3>Slider</h3>
+        <ul>
+          <li>Veja a <a href="http://www.owlcarousel.owlgraphic.com">documentação completa</a>.</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <div class="slider">
+          <div><img src="http://placehold.it/1366x400/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/1366x400/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/1366x400/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/1366x400/2D323B/fffffff&text=Slide" alt=""></div>
+        </div>
+      </div>
+
+      <div class="item">
+      <div class="legenda">
+        <h3>Carrossel</h3>
+        <ul>
+          <li>Veja a <a href="http://www.owlcarousel.owlgraphic.com">documentação completa</a>.</li>
+        </ul>
+      </div>
+
+      <div class="code-sample">
+        <div class="carrossel">
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+          <div><img src="http://placehold.it/400x300/2D323B/fffffff&text=Slide" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+  <section id="rodape">
+     <hgroup class="hgroup">
+      <div class="wrap">
+        <h2><span>| 18</span> Rodapé</h2>
+      </div>
+    </hgroup>
+
+     <div class="code-sample sample-full">
+        <footer class="footer">
+          <div class="wrap">
+            <figure class="logo_footer">
+              <!--[if lte IE 8]><img src="../img/logo_miniclinic_quadrado.png" alt="Logo" class="logo"><![endif]-->
+              <!--[if gt IE 8]><img src="../img/logo_miniclinic_quadrado.svg" alt="Logo" class="logo"><![endif]-->
+              <!--[if !IE]> --><img src="../img/logo_miniclinic_quadrado.svg" alt="Logo" class="logo"><!-- <![endif]-->
+            </figure>
+            <ul id="coluna-1">
+              <li><strong>Saiba mais:</strong></li>
+              <li><a href="#">Para você</a></li>
+              <li><a href="#">Profissionais de Saúde</a></li>
+              <li><a href="#">Soluções</a></li>
+              <li><a href="#">Equipe</a></li>
+            </ul>
+            <ul id="coluna-2">
+              <li><strong>Contato:</strong></li>
+              <li><img src="../img/icone_telefone.png" alt="" class="icone">(46) 3225-5719</li>
+              <li><img src="../img/icone_email.png" alt="" class="icone"><a href="#">contato@miniclinic.com.br</a></li>
+              <li><img src="../img/icone_localizacao.png" alt="" class="icone">Rua Tapajós, 152, Centro</li>
+              <li>Pato Branco - PR </li>
+            </ul>
+            <ul id="coluna-3">
+              <li><strong>Social:</strong></li>
+              <li><img src="../img/icone_facebook.png" alt="" class="icone"><a href="#">Facebook</a></li>
+              <li><img src="../img/icone_twitter.png" alt="" class="icone"><a href="#">Twitter</a></li>
+              <li><img src="../img/icone_googleplus.png" alt="" class="icone"><a href="#">Google+</a></li>
+              <li><img src="../img/icone_instagram.png" alt="" class="icone"><a href="#">Instagram</a></li>
+            </ul>
+            <div class="app_download">
+              <a href="#" title="Download no Google Play"><img src="../img/download_googleplay.png" alt=""></a>
+              <a href="#" title="Baixar na App Store"><img src="../img/download_appstore.png" alt=""></a>
+            </div>
+          </div>
+        </footer>
+        <footer class="creditos">
+          <div class="wrap">
+            <ul>
+              <li><small>2014. <b>PopUp Design</b> Todos os direitos reservados</small></li>
+              <li><a href="#">Termos de Serviço</a></li>
+              <li><a href="#">Perguntas Frequentes</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+  </section>
+
+      <!-- Toogle Código -->
+      <script>
+      (function () {
+        'use strict';
+
+        var snippetToggle = document.querySelector('#snippet-toggle');
+        var snippets;
+
+        snippetToggle.addEventListener('click', function () {
+          if (snippets) {
+            for (var i = 0; i < snippets.length; i++) {
+              snippets[i].classList.toggle('auto-gen-code-visible');
+            }
+          }
+        });
+
+        window.onload = function () {
+          createCodeSamples();
+          snippets = document.querySelectorAll('.auto-gen-code-snippet');
+        };
+
+        function createCodeSamples() {
+          var codeWrappers = document.querySelectorAll('.code-sample');
+
+          for (var i = 0; i < codeWrappers.length; i++) {
+            var codeWrapper = codeWrappers[i];
+            var clonedNodes = getClonedNonTextNodes(codeWrapper);
+
+            beautifyNodes(clonedNodes);
+
+            var preElement = document.createElement('pre');
+            var codeElement = document.createElement('code');
+
+            for (var j = 0; j < clonedNodes.length; j++) {
+              codeElement.appendChild(document.createTextNode(clonedNodes[j].outerHTML));
+
+              if (j + 1 < clonedNodes.length) {
+                codeElement.appendChild(document.createTextNode('\n'));
+              }
+            }
+
+            preElement.appendChild(codeElement);
+            preElement.classList.add('auto-gen-code-snippet');
+            preElement.classList.add('container');
+
+            var clearDiv = document.createElement('div');
+            clearDiv.classList.add('clear');
+
+            var parent = codeWrapper.parentNode;
+
+            if (codeWrapper.nextSibling) {
+              parent.insertBefore(preElement, codeWrapper.nextSibling);
+            } else {
+              parent.appendChild(preElement);
+            }
+
+            parent.insertBefore(clearDiv, preElement);
+          }
+        }
+
+        function getClonedNonTextNodes(element) {
+          var nonTextNodes = [];
+          var childNodes = element.childNodes;
+
+          for (var i = 0; i < childNodes.length; i++) {
+            var childElement = childNodes[i];
+
+            if (childElement.nodeType !== 3) {
+              // Found a valid child element
+              nonTextNodes.push(childElement.cloneNode(true));
+            }
+          }
+
+          return nonTextNodes;
+        }
+
+        function beautifyNodes(elements) {
+          for (var i = 0; i < elements.length; i++) {
+            beautifyNode(elements[i], 0);
+          }
+        }
+
+        function beautifyNode(element, depth) {
+          var childNodes = element.childNodes;
+          var singleIndent = '    ';
+          var currentDepthSpacing = '';
+
+          for (var i = 0; i < depth; i++) {
+            currentDepthSpacing += singleIndent;
+          }
+
+          var nextDepthSpacing = currentDepthSpacing + singleIndent;
+
+          for (var j = 0; j < childNodes.length; j++) {
+            var childElement = childNodes[j];
+
+            if (childElement.nodeType === 3) {
+              // found a text node
+              if (childElement.nodeValue.indexOf('\n') >= 0) {
+                if (j + 1 < childNodes.length) {
+                  childElement.nodeValue = '\n' + nextDepthSpacing;
+                } else {
+                  childElement.nodeValue = '\n' + currentDepthSpacing;
+                }
+              }
+            } else {
+              beautifyNode(childElement, depth + 1);
+            }
+          }
+        }
+      })();
+    </script>
+
+    <!-- Scripts não minificados pelo Gulp -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+
+    <!-- Lightbox -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Slider -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Máscara de Formulários -->
+    <script src="js/jquery.mask.min.js"></script>
+    <script>
+      $('#cep').mask('00000-000');
+      $('#cpf').mask('000.000.000-00', {reverse: true});
+      $('#cnpj').mask('00.000.000/0000-00');
+      var masks = ['(00) 00000-0000', '(00) 0000-00009'],
+        maskBehavior = function(val, e, field, options) {
+        return val.length > 14 ? masks[0] : masks[1];
+      };
+
+      $('#telefone').mask(maskBehavior, {onKeyPress:
+        function(val, e, field, options) {
+        field.mask(maskBehavior(val, e, field, options), options);
+        }
+      });
+
+      $('.snippet').addClass('snippet-off').text('Snippets desativados');
+      $('.snippet').click(function() {
+        if ($(this).hasClass('snippet-off')) {
+          $(this).text('✓ Snippets ativados').removeClass('snippet-off').addClass('snippet-on');
+        }
+        else {
+          $(this).text('Snippets desativados').removeClass('snippet-on').addClass('snippet-off');
+        }
+      });
+    </script>
+
+    <!-- Lightbox -->
+    <script>
+      $(document).ready(function() {
+        $('.image-link').magnificPopup({type:'image'});
+        $('.gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError: '<a href="%url%">A imagem #%curr%</a> não pode ser carregada.',
+            titleSrc: function(item) {
+              return item.el.attr('title');
+            }
+          }
+        });
+      });
+      $(function () {
+        $('.popup-modal').magnificPopup({
+          type: 'inline',
+          preloader: false,
+          focus: '#username',
+          modal: true
+        });
+        $(document).on('click', '.popup-modal-dismiss', function (e) {
+          e.preventDefault();
+          $.magnificPopup.close();
+        });
+      });
+      $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false
+        });
+      $('.popup-with-move-anim').magnificPopup({
+          type: 'inline',
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: 'auto',
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-slide-bottom'
+        });
+    </script>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

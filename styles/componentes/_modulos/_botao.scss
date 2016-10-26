@@ -1,0 +1,152 @@
+/**
+* Botões
+**/
+
+.botao,
+a.botao,
+button.botao {
+	color: #fff;
+	@include borderRadius(2px);
+	@include transition(all, 0.5s, ease-in-out);
+	background: $corBotao;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	padding: 0.6em 1.5em 0.5em 1.5em;
+	text-decoration: none;
+	text-align: center;
+	width: auto;
+	border: none;
+	vertical-align: middle;
+	cursor: pointer;
+	display: inline-block;
+	margin:0 auto;
+	position: relative;
+	-webkit-transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	transition: all 0.25s;
+	&:hover {
+		background: $corBotaoHover;
+	}
+	&:active {
+		position: relative;
+  		top: 1px;
+	}
+}
+
+.botao-secundario,
+a.botao-secundario,
+button.botao-secundario {
+	@extend .botao;
+	@include text-contrast($corSecundaria);
+	background: $corSecundaria;
+	&:hover {
+		background: lighten($corSecundaria, 10);
+	}
+}
+
+.botao-alerta,
+a.botao-alerta,
+button.botao-alerta {
+	@extend .botao;
+	@include text-contrast($corAlerta);
+	background: $corAlerta;
+	&:hover {
+		background: lighten($corAlerta, 10);
+	}
+}
+
+.botao-sucesso,
+a.botao-sucesso,
+button.botao-sucesso {
+	@extend .botao;
+	@include text-contrast($corSucesso);
+	background: $corSucesso;
+	&:hover {
+		background: lighten($corSucesso, 10);
+	}
+}
+
+.botao-desativado,
+a.botao-desativado,
+button.botao-desativado {
+	@extend .botao;
+	@include text-contrast($corSuave);
+	background: $corSuave;
+	&:hover {
+		background: $corSuave;
+	}
+	&:active {
+  		top: 0;
+	}
+}
+
+.botao-sombra,
+a.botao-sombra,
+button.botao-sombra {
+	@extend .botao;
+	border-bottom: 3px solid darken($corBotao, 10);
+	&.botao-secundario {
+		border-bottom: 3px solid darken($corSecundaria, 10);
+	}
+	&.botao-alerta {
+		border-bottom: 3px solid darken($corAlerta, 10);
+	}
+	&.botao-sucesso {
+		border-bottom: 3px solid darken($corSucesso, 10);
+	}
+	&:active {
+		position: relative;
+  		top: 0;
+  		border-bottom: none;
+	}
+	&.botao-desativado {
+		border-bottom: 3px solid darken($corSuave, 10);
+		&:active {
+			position: relative;
+  			top: 0;
+  			border-bottom: 3px solid darken($corSuave, 10);
+		}
+	}
+}
+
+.botao-fantasma,
+a.botao-fantasma,
+button.botao-fantasma {
+	@extend .botao;
+	background: none;
+	color: $corBotao;
+	border: 2px solid $corBotao;
+	&:hover {
+		border: 2px solid $corBotaoHover;
+		@include text-contrast($corBotao);
+	}
+	&.botao-secundario {
+		color:$corSecundaria;
+		border: 2px solid $corSecundaria;
+		&:hover {
+			@include text-contrast($corSecundaria);
+		}
+	}
+	&.botao-alerta {
+		color:$corAlerta;
+		border: 2px solid $corAlerta;
+		&:hover {
+			@include text-contrast($corAlerta);
+		}
+	}
+	&.botao-sucesso {
+		color:$corSucesso;
+		border: 2px solid $corSucesso;
+		&:hover {
+			@include text-contrast($corSucesso);
+		}
+	}
+	&.botao-desativado {
+		color:$corSuave;
+		border: 2px solid $corSuave;
+		&:hover {
+			color: $corSuave;
+			background: none;
+		}
+	}
+}

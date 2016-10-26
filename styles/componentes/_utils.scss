@@ -1,0 +1,81 @@
+/**
+* Classes Genéricas
+**/
+
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.centraliza {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/**
+* Mixins Úteis
+**/
+
+@mixin borderRadius($radius) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin sombra($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: 0.1) {
+  -webkit-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+  -moz-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+  box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+}
+
+@mixin sombraInset {
+	-moz-box-shadow:    inset 0 0 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	box-shadow:         inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+@mixin opacidade($opacity) {
+     opacity: $opacity;
+     $opacityIE: $opacity * 100;
+     filter: alpha(opacity=$opacityIE);
+}
+
+@mixin selection {
+    ::-moz-selection { @content; }
+    ::selection { @content; }
+}
+
+@mixin text-contrast($n) {
+  $color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000);
+  $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+
+  @if abs($color-brightness) < ($light-color/2){
+    color: #FFF;
+  }
+
+  @else {
+    color: $corTexto;
+  }
+}
+
+@mixin textoPlaceholder($corPlaceholder) {
+  &::-webkit-input-placeholder { color: $corPlaceholder; }
+  &:-moz-placeholder { color: $corPlaceholder; }
+  &::-moz-placeholder { color: $corPlaceholder; }
+  &:-ms-input-placeholder { color: $corPlaceholder; }
+}
+
+
+@mixin transition($propriedade, $tempo, $metodo) {
+  -webkit-transition: $propriedade $tempo $metodo;
+  -moz-transition: $propriedade $tempo $metodo;
+  -ms-transition: $propriedade $tempo $metodo;
+  -o-transition: $propriedade $tempo $metodo;
+  transition: $propriedade $tempo $metodo;
+}
